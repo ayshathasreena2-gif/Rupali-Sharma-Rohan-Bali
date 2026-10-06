@@ -1,8 +1,39 @@
 /*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+:root {
+    --paper: #FAF7F2;
+    --gold: #8C6212;
+    --gold-dark: #6E4B0B;
+    --maroon: #58111A;
+    --burgundy: #4A0E17;
+    --forest: #1E3A27;
+    --olive: #254630;
+    --foreground: #2C1D11;
+    --background: #58111A;
+}
+
 html,
 body {
     touch-action: manipulation;
     -webkit-overflow-scrolling: touch;
+    color: #2C1D11;
+}
+
+/* High-contrast typography & royal color palette styling */
+h1, h2, h3 {
+    color: #58111A;
+}
+
+h4, h5, h6 {
+    color: #4A0E17;
+}
+
+/* Specific contrast overrides for text readability against light paper bg */
+.text-stone-600, .text-stone-500, .text-stone-400, .text-neutral-500, .text-gray-500, .text-gray-600 {
+    color: #362214;
+}
+
+.text-amber-700, .text-yellow-700, .text-amber-800 {
+    color: #1E3A27;
 }
 
 img {
